@@ -1,0 +1,19 @@
+<nav class="bg-rose-700 p-4">
+    <div class="container mx-auto flex flex-col lg:flex-row lg:justify-between lg:items-center">
+      <!-- Logo and Text -->
+      <div class="flex items-center mb-4 lg:mb-0">
+        <img src="assets/cheetah.png" alt="Logo" class="h-20 w-auto" />
+        <a routerLink="home-page" [ngClass]="{'text-white': isActive('home-page'), 'text-gray-5+00 hover:text-white': !isActive('home-page')}"
+  ><span class="font-bold ml-2 text-2xl">THE CHEETAH STORE</span></a>
+
+      </div>
+      <!-- Navigation Links -->
+      <div class="flex items-center">
+        <a routerLink="login" aria-label="Login" class="text-gray-300 hover:text-white mr-4 px-4">Login</a>
+        <a routerLink="cart" aria-label="Cart" class="text-gray-300 hover:text-white mr-4 px-4">Cart(0)</a>
+        <a routerLink="services" aria-label="Services" class="text-gray-300 hover:text-white mr-4 px-4">Services</a>
+        <a routerLink="contact-us" aria-label="Contact Us" class="text-gray-300 hover:text-white px-4">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+  

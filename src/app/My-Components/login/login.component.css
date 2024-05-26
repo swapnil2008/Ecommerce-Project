@@ -1,0 +1,17 @@
+/* login.component.css */
+
+input[type="email"],
+input[type="password"],
+button {
+  transition: all 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #4299e1;
+}
+
+button:hover,
+button:focus {
+  background-color: #4299e1;
+}
